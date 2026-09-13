@@ -32,7 +32,7 @@ Prioritas perbaikan yang direkomendasikan:
 7. Lakukan audit credential dan rotasi password yang berpotensi digunakan ulang.
 8. Implementasikan security logging dan monitoring terhadap aktivitas mencurigakan.
 
-# 3. Detail Temuan
+## 3. Detail Temuan
 
 ### Temuan 1: Cross-Site Scripting (XSS)
 
