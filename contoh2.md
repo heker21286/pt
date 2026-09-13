@@ -7,7 +7,9 @@
 
 ## 1. Executive Summary
 
-Pengujian keamanan dilakukan terhadap aplikasi web `target.com` untuk mengidentifikasi kelemahan pada sisi input validation, file handling, autentikasi, dan kontrol akses.
+Pengujian penetrasi dengan metode black-box dilakukan terhadap aplikasi web target.com untuk mengidentifikasi potensi kelemahan keamanan yang dapat dimanfaatkan oleh pihak yang tidak berwenang.
+
+Hasil pengujian menemukan 4 temuan keamanan, yaitu Cross-Site Scripting (XSS), Local File Inclusion (LFI), Unrestricted File Upload/Upload Bypass, dan Password Reuse, dengan tingkat keparahan 1 Medium dan 3 High.
 
 Ditemukan **4 temuan keamanan**:
 
@@ -17,6 +19,10 @@ Ditemukan **4 temuan keamanan**:
 | 2  | Local File Inclusion (LFI)               | High     |
 | 3  | Unrestricted File Upload / Upload Bypass | High     |
 | 4  | Password Reuse                           | High     |
+
+Temuan tersebut menunjukkan adanya kelemahan pada validasi input, pengelolaan berkas, dan keamanan akun yang berpotensi menyebabkan akses atau penggunaan sistem secara tidak semestinya. Beberapa temuan juga dapat saling dikombinasikan sehingga meningkatkan risiko terhadap keamanan sistem.
+
+Perbaikan perlu diprioritaskan pada temuan dengan tingkat keparahan High, dilanjutkan dengan pengujian ulang untuk memastikan seluruh kelemahan telah ditangani.
 
 Beberapa temuan dapat saling dikombinasikan dan berpotensi meningkatkan dampak terhadap kerahasiaan, integritas, dan ketersediaan sistem.
 
